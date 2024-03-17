@@ -49,23 +49,42 @@ class BinarySearchTree{
 }
 
 const tree = new BinarySearchTree();
+// tree.insert(9);
+// tree.insert(4);
+// tree.insert(6);
+// tree.insert(20);
+// tree.insert(170);
+// tree.insert(15);
+// tree.insert(1);
+
+
 tree.insert(9);
 tree.insert(4);
-tree.insert(6);
-tree.insert(20);
-tree.insert(170);
-tree.insert(15);
+tree.insert(2);
 tree.insert(1);
+// tree.insert(6);
+// tree.insert(20);
+// tree.insert(170);
+// tree.insert(15);
+// tree.insert(1);
 
 
 console.log(JSON.stringify(traverse(tree.root)));
 
 function traverse(node){
-    const tree = {value: node.value};
-    tree.left = node.left === null ? null:
-    traverse(node.left);
-    tree.right = node.right === null ? null:
-    traverse(node.right);
-    return tree;
-};
+    // // if (node.left == null){
+    // //     return String(node.value);
+    // // }
+    // // else{return node.value + traverse(node.left);}
+
+    // if (node.right == null){
+    //     return String(node.value);
+    // }
+    // else{return node.value + traverse(node.right);}
+    temp = ""
+    while(true){
+        
+    }
+}
+
 
