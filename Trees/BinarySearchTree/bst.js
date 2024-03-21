@@ -49,19 +49,21 @@ class BinarySearchTree{
 }
 
 const tree = new BinarySearchTree();
-// tree.insert(9);
-// tree.insert(4);
-// tree.insert(6);
-// tree.insert(20);
-// tree.insert(170);
-// tree.insert(15);
-// tree.insert(1);
-
-
 tree.insert(9);
 tree.insert(4);
-tree.insert(2);
+tree.insert(6);
+tree.insert(20);
+tree.insert(170);
+tree.insert(15);
 tree.insert(1);
+
+traverse(tree.root)
+
+
+// tree.insert(9);
+// tree.insert(4);
+// tree.insert(2);
+// tree.insert(1);
 // tree.insert(6);
 // tree.insert(20);
 // tree.insert(170);
@@ -69,22 +71,16 @@ tree.insert(1);
 // tree.insert(1);
 
 
-console.log(JSON.stringify(traverse(tree.root)));
+// console.log(JSON.stringify(traverse(tree.root)));
 
 function traverse(node){
-    // // if (node.left == null){
-    // //     return String(node.value);
-    // // }
-    // // else{return node.value + traverse(node.left);}
-
-    // if (node.right == null){
-    //     return String(node.value);
-    // }
-    // else{return node.value + traverse(node.right);}
-    temp = ""
-    while(true){
-        
+    if(node.left != null){
+        traverse(node.left)
     }
+    if(node.right != null){
+        traverse(node.right)
+    }
+    console.log(node.value)
 }
 
 
