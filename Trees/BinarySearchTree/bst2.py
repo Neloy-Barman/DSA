@@ -45,40 +45,103 @@ class BinarySearchTree:
             elif val == currentNode.val:
                 return currentNode
 
+# Clumsy Version   
+# def breadthFirstSearch(root: Node):
+#     nodes = [root]
+#     values = [root.val]
+#     i = 0
+#     while True:
+#         if i == len(nodes):
+#             # print("i greater than total nodes")
+#             break
+#         # print(f"Within BFS: {values[i]}")
+#         n, v = traverse(nodes[i])
+#         nodes.extend(n)
+#         values.extend(v)
+#         # print(values)
+#         i += 1
+#     print(values)
 
 
+# def traverse(node: Node):
+#     nodes = []
+#     values = []
+#     if node.left:
+#         nodes.append(node.left)
+#         values.append(node.left.val)
+#     if node.right:
+#         nodes.append(node.right)
+#         values.append(node.right.val)
+#     # print(f"Within traverse: {values}")
+#     return nodes, values
 
+
+# Clean Version
+# def breadthFirstSearch(root: Node):
+#     nodes = [root]
+#     i = 0
+#     while i < len(nodes):
+#         nodes.extend(traverse(nodes[i]))
+#         i += 1
+#     return [node.val for node in nodes]
+
+# def traverse(node: Node):
+#     nodes = []
+#     if node.left:
+#         nodes.append(node.left)
+#     if node.right:
+#         nodes.append(node.right)
+#     return nodes
             
-def traverse(node):
-    # nodes = []
-    nodes = {}
-    if node.left != None:
-        # nodes.extend(traverse(node=node.left))
-        traverse(node=node.left)
-    # nodes = [node.val]
-    # print(node.val, nodes)
-    nodes[node.val] = node
-    if node.right != None:
-        # nodes.extend(traverse(node=node.right))
-        traverse(node=node.right)
-    # return nodes.append(node.val)
-    return nodes
-            
+
+def breadthFirstSearch(nodes: list,i):
+    if i >= len(nodes):
+        return [node.val for node in nodes]
+    node = nodes[i]
+    if node.left:
+        nodes.append(node.left)
+    if node.right:
+        nodes.append(node.right)
+    i  += 1
+    return breadthFirstSearch(nodes,i)
+
+
+def depthFirstSearch(node: Node, nodes):
+    nodes.append(node.val)
+    if node.left:
+        depthFirstSearch(node=node.left, nodes=nodes)
+    if node.right:
+        depthFirstSearch(node = node.right, nodes=nodes)
+
+
+
 def main():
     tree = BinarySearchTree()
     tree.insert(9)
     tree.insert(4)
-    tree.insert(6)
     tree.insert(20)
-    tree.insert(170)
-    tree.insert(15)
     tree.insert(1)
+    tree.insert(6)
+    tree.insert(15)
+    tree.insert(170)
+    tree.insert(0)
+    tree.insert(1.5)
+    # tree.insert(170)
+    # tree.insert(15)
+    # tree.insert(1)
+    # tree.insert(0)
+    # tree.insert(1.5)
 
-    node = tree.lookup(17)
-    if node:
-        print(node)
     # nodes = traverse(tree.root)
     # print(nodes)
+
+    nodes = breadthFirstSearch([tree.root],0)
+    print(nodes)
+
+    # nodes = []
+    # print(f"Before Traversal: {nodes}")
+    # depthFirstSearch(tree.root, nodes=nodes)
+    # print(f"After Traversal: {nodes}")
 
 if __name__ == "__main__":
     main()
