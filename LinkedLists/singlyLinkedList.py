@@ -135,32 +135,94 @@ class SinglyLinkedList:
 # singly.reverse()
 # print(f"Values: {singly.traverse()}, Length: {singly.len()}")
 
+# singly2 = SinglyLinkedList(7)
+# singly2.append(9)
+# singly2.append(6)
+# singly2.append(6)
+# singly2.append(7)
+# singly2.append(8)
+# singly2.append(3)
+# singly2.append(0)
+# singly2.append(9)
+# singly2.append(5)
+    
+# singly2 = SinglyLinkedList(1)
+# singly2.append(2)
+# singly2.append(3)
+# singly2.append(4)
+# singly2.append(5)
+
 singly2 = SinglyLinkedList(1)
 singly2.append(2)
 singly2.append(3)
-singly2.append(2)
-singly2.append(1)
+
+
+
+
+def swapNodes(head: Node, k: int) -> Node:
+    slow, fast = head, head
+    counter, ch = 1, None
+    while fast != None and fast.next != None:
+        counter += 1
+        print(counter)
+        if counter == k:
+            print('Counter accessed')
+            ch = slow
+        print(f"Slow: {slow.val}, Fast: {fast.val}")
+        slow = slow.next
+        fast = fast.next.next
+        print(f"Slow: {slow.val}, Fast: {fast.val}")
+
+    print(f"Changing: {ch.val}")
+
+    if fast:
+        slow = slow.next
+    
+    print(f"Counter: {counter}, slow: {slow.val}")
+
+    chnext = None
+    while counter != k-1:
+        print(counter)
+        if counter == k:
+            chnext = slow
+        slow = slow.next
+        counter -= 1
+    print(f"Value: {chnext.val}")
+    # temp1 = ch.next
+    # temp2 = chnext.next
+    # chprev.next = chnext
+    # chnext.next = temp1
+    # ch.next = temp2
+    temp = chnext.val
+    chnext.val = ch.val
+    ch.val = temp
+    return head
+
+swapNodes(singly2.head, k=2)
 
 print(singly2.traverse())
 
-def isPalindrome(head: Node) -> bool:
-    slow, fast, stack = head, head, []
-    while fast != None and fast.next != None:
-        print(slow.val)
-        stack.append(slow.val)
-        slow = slow.next
-        fast = fast.next.next
-    currentNode = slow
-    if fast:
-        currentNode = slow.next
-    while currentNode != None:
-        if stack[-1] != currentNode.val:
-            print("It' False")
-            return False
-        stack.pop()
-        currentNode = currentNode.next
-    print("It' True")
-    return True
 
-isPalindrome(head=singly2.head)
+# print(singly2.traverse())
+
+# def isPalindrome(head: Node) -> bool:
+#     slow, fast, stack = head, head, []
+#     while fast != None and fast.next != None:
+#         print(slow.val)
+#         stack.append(slow.val)
+#         slow = slow.next
+#         fast = fast.next.next
+#     currentNode = slow
+#     if fast:
+#         currentNode = slow.next
+#     while currentNode != None:
+#         if stack[-1] != currentNode.val:
+#             print("It' False")
+#             return False
+#         stack.pop()
+#         currentNode = currentNode.next
+#     print("It' True")
+#     return True
+
+# isPalindrome(head=singly2.head)
 

@@ -177,22 +177,34 @@ def main():
     # x = isSameTree(bst1.root, bst2.root)
     # print(x)
 
-    node1 = Node(value=3)
-    node2 = Node(value=4)
+    # node1 = Node(value=3)
+    # node2 = Node(value=4)
 
-    node3 = Node(value=4)
-    node4 = Node(value=3)
+    # node3 = Node(value=4)
+    # node4 = Node(value=3)
 
-    node5 = Node(value=2, left=node1, right=node2)
-    node6 = Node(value=2, left=node3, right=node4)
+    # node5 = Node(value=2, left=node1, right=node2)
+    # node6 = Node(value=2, left=node3, right=node4)
 
-    node7 = Node(value=1, left=node5, right=node6)
+    # node7 = Node(value=1, left=node5, right=node6)
 
     # nodes = traverse(node=node7)
     # print(nodes)
 
-    print(isSymmetric(node7))
+    # print(isSymmetric(node7))
 
+    # node1 = 
+
+    bst = BinarySearchTree()
+    bst.insert(1)
+    bst.insert(2)
+    bst.insert(5)
+    bst.insert(3)
+    bst.insert(4)
+    bst.insert(6)
+
+    nodes = bst.depthFirstSearch(bst.root, [])
+    print(nodes)
 
 
 
