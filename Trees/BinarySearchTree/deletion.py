@@ -16,10 +16,18 @@ def traverse(node: TreeNode, nodes: list[TreeNode]):
     # nodes.append(node.val)
     return nodes
 
+# def traverse(node: TreeNode, nodes: list[TreeNode]):
+#     if not node:
+#         return nodes
+#     nodes.append(node.val)
+#     traverse(node.left, nodes)
+#     traverse(node.right, nodes)
+#     return nodes
+
 def findSmallestPredecessor(node: TreeNode, pre: TreeNode):
     if node.val < pre.val:
         pre = node
-    if node.left:
+    if node.left:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         return findSmallestPredecessor(node=node.left, pre=pre)
     return pre
             
@@ -130,27 +138,40 @@ def main():
     # print(traverse(node=head, nodes=[]))
 
 
+    # # Proper Case 2
+    # node1 = TreeNode(val=4)
+    # node2 = TreeNode(val=8, left=node1)
+    # node5 = TreeNode(val=70)
+    # node6 = TreeNode(val=60, right=node5)
+    # node7 = TreeNode(val=50, right=node6)
+    # node8 = TreeNode(val=40, right=node7)
+    # node3 = TreeNode(val=30, right=node8)
+    # node4 = TreeNode(val=10, left=node2, right=node3)
+    # head = node4
+    # print(traverse(node=head, nodes=[]))
+
+    # head = keyDeletion(node=head, head=head, key=8, stack = [])
+    # print(traverse(node=head, nodes=[]))
+
+    # head = keyDeletion(node=head, key=10, head=head,stack=[])
+    # print(traverse(node=head, nodes=[]))
+
+    # head = keyDeletion(node=head, key=70, head=head,stack=[])
+    # print(traverse(node=head, nodes=[]))
+
+
     # Proper Case 2
-    node1 = TreeNode(val=4)
-    node2 = TreeNode(val=8, left=node1)
-    node5 = TreeNode(val=70)
-    node6 = TreeNode(val=60, right=node5)
-    node7 = TreeNode(val=50, right=node6)
-    node8 = TreeNode(val=40, right=node7)
-    node3 = TreeNode(val=30, right=node8)
-    node4 = TreeNode(val=10, left=node2, right=node3)
-    head = node4
+    node60 = TreeNode(val=60)
+    node80 = TreeNode(val=80)
+    node70 = TreeNode(val=70, left=node60, right=node80)
+    node40 = TreeNode(val=40)
+    node30 = TreeNode(val=30, right=node40)
+    node50 = TreeNode(val=50, left=node30, right=node70)
+    head = node50
     print(traverse(node=head, nodes=[]))
 
-    head = keyDeletion(node=head, head=head, key=8, stack = [])
+    head = keyDeletion(node=head, head=head, key=50, stack = [])
     print(traverse(node=head, nodes=[]))
-
-    head = keyDeletion(node=head, key=10, head=head,stack=[])
-    print(traverse(node=head, nodes=[]))
-
-    head = keyDeletion(node=head, key=70, head=head,stack=[])
-    print(traverse(node=head, nodes=[]))
-
 
 
 if __name__ == "__main__":

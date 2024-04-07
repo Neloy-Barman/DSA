@@ -21,20 +21,70 @@ def contiguous(nums, match: list):
             return False
     return True 
 
-def backTracking(nums, permutations, target) -> int:
-    i = 0
-    while i < len(nums):      
-        temp = [nums[j] for j in range(len(nums)) if j != i]
-        if temp != []:
-            if temp not in permutations:
-                permutations.append(temp)
-            backTracking(temp, permutations=permutations, target=target)
-        i += 1
-    return permutations
+# def backTracking(nums, permutations, target) -> int:
+#     i = 0
+#     while i < len(nums):      
+#         temp = [nums[j] for j in range(len(nums)) if j != i]
+#         if temp != []:
+#             if temp not in permutations:
+#                 permutations.append(temp)
+#             backTracking(temp, permutations=permutations, target=target)
+#         i += 1
+#     return permutations
 
+
+# def permuationBackTracking(nums: int):
+#     print(nums)
+#     i = 0
+#     while i < len(nums):
+#         temp = [nums[j] for j in range(len(nums)) if i != j]
+#         if temp != []:
+#             permuationBackTracking(nums=temp)
+#         i += 1
+
+# def bruteForce(i: int, nums: list[int], stack, final):
+#     if i == len(nums):
+#         print("Here it is")
+#         print(f"Stack: {stack}, final: {final}")
+#         final.append(stack)
+#         return final
+#     print(f"This is num: {nums[i]} and relavant empty stack: {[]}")
+#     stack.append(nums[i])
+#     return bruteForce(i=i+1, nums=nums, stack=stack, final=final) and bruteForce(i=i+1, nums=nums, stack=[], final=final)
+
+
+
+def subsets(nums):
+    res = []
+    subset = []
+
+    def backTrack(i):
+        if i == len(nums):
+            res.append(subset.copy())
+            return
+        
+        print(f"Index: {i}, Element: {nums[i]}, Subset: {subset}, result: {res}")
+        subset.append(nums[i])
+        backTrack(i+1)
+
+        subset.pop()
+        backTrack(i+1)
+    
+    backTrack(0)
+    return res
+    
+
+    
 
 
 def main():
+
+    nums = [1,2,3]
+    # subsets = bruteForce(i=0, nums = nums, stack=[], final=[])
+    # print(subsets)
+
+    subs = subsets(nums=nums)
+    print(subs)
     # nums = [1, 2, 3]
     # # nums = [10, 5, 2, 6]
     # permutations = [nums]
@@ -55,10 +105,10 @@ def main():
     # print(counter)
 
 
-    nums = [1,2,3]
-    nums = [10,5,2,6,7]
-    permutations = contiguousSubArrays(nums=nums)
-    print(permutations)
+    # nums = [1,2,3]
+    # nums = [10,5,2,6,7]
+    # permutations = contiguousSubArrays(nums=nums)
+    # print(permutations)
 
 
 
