@@ -1,114 +1,219 @@
-# 8-Week DSA Problem List
+# The Ultimate 8-Week Daily DSA Syllabus
 
-This is a curated list of problems to solve week-by-week. Attempt each problem first without trying to identify its pattern. After solving (or checking the solution), categorize it yourself to build pattern-recognition skills.
+## Core Principles for Every Session
 
-### Week 1: Arrays & Strings
+*   **Timeboxing:** Stick to the recommended times. If you can't solve it, that's okay! The goal is to learn efficiently, not to get stuck for hours.
+*   **The Process:** For EVERY problem, follow the 4-step process:
+    1.  **Understand & Clarify** (2-5 mins)
+    2.  **Brainstorm & Strategize** (5-7 mins)
+    3.  **Implement Code** (15-20 mins)
+    4.  **Test & Verify** (3-5 mins)
+*   **Review is Key:** If you solve a problem, spend 10-15 minutes reviewing alternative solutions. If you don't solve it, spend 20-25 minutes deeply understanding the official solution, then **try to re-code it from scratch without looking**.
 
-1.  `Contains Duplicate`
-2.  `Valid Anagram`
-3.  `Two Sum`
-4.  `Valid Palindrome`
-5.  `Best Time to Buy and Sell Stock`
-6.  `Group Anagrams`
-7.  `Product of Array Except Self`
-8.  `Rotate Array`
-9.  `Two Sum II - Input Array Is Sorted`
-10. `Longest Substring Without Repeating Characters`
-11. `Container With Most Water`
-12. `3Sum`
-13. `Set Matrix Zeroes`
-14. `Spiral Matrix`
-15. `Longest Palindromic Substring`
+---
 
-### Week 2: Hashing & Linked Lists
+### **Week 0: The Foundation**
 
-1.  `Ransom Note`
-2.  `Merge Two Sorted Lists`
-3.  `Reverse Linked List`
-4.  `Linked List Cycle`
-5.  `Remove Nth Node From End of List`
-6.  `Middle of the Linked List`
-7.  `Reorder List`
-8.  `LRU Cache`
-9.  `Copy List with Random Pointer`
-10. `Merge k Sorted Lists`
-11. `Reverse Nodes in k-Group`
+*Goal: Set up the fundamentals. Don't skip this.*
 
-### Week 3: Stacks, Queues & Trees (Traversals)
+*   **Day 1-3: Language Proficiency.** Ensure you are fluent in your chosen language's core data structures: arrays/lists, hashmaps/dictionaries, and sets. Practice creating, adding to, removing from, and iterating over them.
+*   **Day 4-7: Big O Notation.** Watch videos and read articles on Time and Space Complexity. Your goal is to be able to look at a piece of code with nested loops, for example, and confidently say why it's O(n^2). Analyze the complexity of every problem you solve going forward.
 
-1.  `Valid Parentheses`
-2.  `Implement Queue using Stacks`
-3.  `Binary Tree Inorder Traversal`
-4.  `Binary Tree Preorder Traversal`
-5.  `Binary Tree Level Order Traversal`
-6.  `Same Tree`
-7.  `Invert Binary Tree`
-8.  `Maximum Depth of Binary Tree`
-9.  `Symmetric Tree`
-10. `Subtree of Another Tree`
-11. `Path Sum`
-12. `Daily Temperatures`
-13. `Evaluate Reverse Polish Notation`
-14. `Generate Parentheses`
+---
 
-### Week 4: Advanced Trees & Heaps
+### **Week 1: Arrays & Strings**
 
-1.  `Validate Binary Search Tree`
-2.  `Lowest Common Ancestor of a Binary Search Tree`
-3.  `Kth Smallest Element in a BST`
-4.  `Construct Binary Tree from Preorder and Inorder Traversal`
-5.  `Kth Largest Element in an Array`
-6.  `Top K Frequent Elements`
-7.  `Find Median from Data Stream`
-8.  `Implement Trie (Prefix Tree)`
-9.  `Design Add and Search Words Data Structure`
-10. `Word Search II`
+*Goal: Master fundamental patterns like Two Pointers and Sliding Window.*
 
-### Week 5: Graphs
+*   **Day 1**
+    *   Problem 1: `Contains Duplicate` (Time: 20 min attempt, 10 min review)
+    *   Problem 2: `Valid Anagram` (Time: 25 min attempt, 15 min review)
+*   **Day 2**
+    *   Problem 1: `Two Sum` (Time: 20 min attempt, 10 min review)
+    *   Problem 2: `Group Anagrams` (Time: 30 min attempt, 20 min review)
+*   **Day 3**
+    *   Problem 1: `Best Time to Buy and Sell Stock` (Time: 25 min attempt, 15 min review)
+    *   Problem 2: `Product of Array Except Self` (Time: 30 min attempt, 20 min review)
+*   **Day 4**
+    *   Problem 1: `Valid Palindrome` (Time: 20 min attempt, 10 min review)
+    *   Problem 2: `Longest Substring Without Repeating Characters` (Time: 30 min attempt, 20 min review)
+*   **Day 5**
+    *   Problem 1: `Container With Most Water` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `3Sum` (Time: 35 min attempt, 25 min review)
+*   **Day 6: Review Day**
+    *   Re-solve `Group Anagrams` and `Product of Array Except Self` from memory.
+    *   Review one other problem from this week you found tricky.
+*   **Day 7: Review & Catch-up Day**
+    *   Re-solve `Longest Substring Without Repeating Characters` from memory.
+    *   Finish any problems you didn't get to.
 
-1.  `Number of Islands`
-2.  `Clone Graph`
-3.  `Max Area of Island`
-4.  `Rotting Oranges`
-5.  `Pacific Atlantic Water Flow`
-6.  `Course Schedule`
-7.  `Course Schedule II`
-8.  `Number of Connected Components in an Undirected Graph`
-9.  `Word Ladder`
-10. `Redundant Connection`
+---
 
-### Week 6: Dynamic Programming (DP)
+### **Week 2: Hashing & Linked Lists**
 
-1.  `Climbing Stairs`
-2.  `House Robber`
-3.  `Coin Change`
-4.  `Min Cost Climbing Stairs`
-5.  `Longest Increasing Subsequence`
-6.  `Word Break`
-7.  `Combination Sum IV`
-8.  `Unique Paths`
-9.  `Longest Common Subsequence`
-10. `House Robber II`
+*Goal: Understand pointer manipulation and when to use hashing for O(1) lookups.*
 
-### Week 7: Review & Advanced Concepts
+*   **Day 1**
+    *   Problem 1: `Reverse Linked List` (Time: 25 min attempt, 15 min review)
+    *   Problem 2: `Linked List Cycle` (Time: 25 min attempt, 15 min review)
+*   **Day 2**
+    *   Problem 1: `Merge Two Sorted Lists` (Time: 25 min attempt, 15 min review)
+    *   Problem 2: `Remove Nth Node From End of List` (Time: 30 min attempt, 20 min review)
+*   **Day 3**
+    *   Problem 1: `Reorder List` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `Middle of the Linked List` (Time: 20 min attempt, 10 min review)
+*   **Day 4**
+    *   Problem 1: `Copy List with Random Pointer` (Time: 35 min attempt, 25 min review)
+*   **Day 5**
+    *   Problem 1: `LRU Cache` (Time: 40 min attempt, 25 min review)
+*   **Day 6: Review Day**
+    *   Re-solve `Reverse Linked List` and `Reorder List` from memory.
+    *   Review the logic for `Copy List with Random Pointer`.
+*   **Day 7: Hard Problem & Catch-up**
+    *   Problem 1: `Merge k Sorted Lists` (Time: 35 min attempt, 25 min review)
 
-1.  `Subsets`
-2.  `Combination Sum`
-3.  `Permutations`
-4.  `Letter Combinations of a Phone Number`
-5.  `Merge Intervals`
-6.  `Maximum Subarray`
-7.  `Search in Rotated Sorted Array`
-8.  `N-Queens`
-9.  `Word Search`
-10. `Find Minimum in Rotated Sorted Array`
+---
 
-### Week 8: Mock Interviews & Final Polish
+### **Week 3: Stacks, Queues & Trees (Traversals)**
 
-This week, focus on mock interviews. In your spare time, tackle these classic hard problems that often combine multiple patterns. Re-do any problems from the previous weeks that you found particularly challenging.
+*Goal: Learn LIFO/FIFO structures and master DFS/BFS traversals on trees.*
 
-1.  `Trapping Rain Water`
-2.  `Median of Two Sorted Arrays`
-3.  `Serialize and Deserialize Binary Tree`
-4.  `Regular Expression Matching`
-5.  `Longest Valid Parentheses`
+*   **Day 1**
+    *   Problem 1: `Valid Parentheses` (Time: 20 min attempt, 10 min review)
+    *   Problem 2: `Implement Queue using Stacks` (Time: 25 min attempt, 15 min review)
+*   **Day 2**
+    *   Problem 1: `Binary Tree Inorder Traversal` (Time: 25 min attempt, 15 min review)
+    *   Problem 2: `Invert Binary Tree` (Time: 20 min attempt, 10 min review)
+*   **Day 3**
+    *   Problem 1: `Maximum Depth of Binary Tree` (Time: 20 min attempt, 10 min review)
+    *   Problem 2: `Same Tree` (Time: 20 min attempt, 10 min review)
+*   **Day 4**
+    *   Problem 1: `Subtree of Another Tree` (Time: 25 min attempt, 15 min review)
+    *   Problem 2: `Binary Tree Level Order Traversal` (Time: 30 min attempt, 20 min review)
+*   **Day 5**
+    *   Problem 1: `Daily Temperatures` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `Generate Parentheses` (Time: 35 min attempt, 25 min review)
+*   **Day 6: Review Day**
+    *   Re-solve `Binary Tree Level Order Traversal` from memory.
+    *   Review all tree traversal methods (In-order, Pre-order, Post-order, Level-order).
+*   **Day 7: Review & Catch-up Day**
+    *   Re-solve `Daily Temperatures` from memory.
+    *   Finish any problems you didn't get to.
+
+---
+
+### **Week 4: Advanced Trees & Heaps**
+
+*Goal: Understand BST properties and how heaps (Priority Queues) solve "Top K" problems.*
+
+*   **Day 1**
+    *   Problem 1: `Validate Binary Search Tree` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `Lowest Common Ancestor of a Binary Search Tree` (Time: 25 min attempt, 15 min review)
+*   **Day 2**
+    *   Problem 1: `Kth Smallest Element in a BST` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `Kth Largest Element in an Array` (Time: 25 min attempt, 15 min review)
+*   **Day 3**
+    *   Problem 1: `Top K Frequent Elements` (Time: 30 min attempt, 20 min review)
+*   **Day 4**
+    *   Problem 1: `Find Median from Data Stream` (Time: 40 min attempt, 25 min review)
+*   **Day 5**
+    *   Problem 1: `Implement Trie (Prefix Tree)` (Time: 35 min attempt, 25 min review)
+*   **Day 6: Review Day**
+    *   Review the logic for `Find Median from Data Stream`. What are the key data structures? Why?
+    *   Re-solve `Top K Frequent Elements` from memory.
+*   **Day 7: Review & Catch-up Day**
+    *   Review the structure and methods of a Trie.
+    *   Finish any problems you didn't get to.
+
+---
+
+### **Week 5: Graphs**
+
+*Goal: Model problems as graphs and apply BFS/DFS traversals. This is a tough but crucial week.*
+
+*   **Day 1**
+    *   Problem 1: `Number of Islands` (Time: 30 min attempt, 20 min review)
+*   **Day 2**
+    *   Problem 1: `Clone Graph` (Time: 35 min attempt, 25 min review)
+    *   Problem 2: `Max Area of Island` (Time: 30 min attempt, 20 min review)
+*   **Day 3**
+    *   Problem 1: `Rotting Oranges` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `Pacific Atlantic Water Flow` (Time: 35 min attempt, 25 min review)
+*   **Day 4**
+    *   Problem 1: `Course Schedule` (Time: 35 min attempt, 25 min review)
+*   **Day 5**
+    *   Problem 1: `Course Schedule II` (Time: 35 min attempt, 25 min review)
+*   **Day 6: Review Day**
+    *   Re-solve `Number of Islands` from memory.
+    *   Review the difference between BFS and DFS for graph traversal. When would you use each?
+*   **Day 7: Review & Catch-up Day**
+    *   Re-solve `Course Schedule` from memory. Understand the concept of topological sort.
+
+---
+
+### **Week 6: Dynamic Programming (DP)**
+
+*Goal: Learn to identify DP patterns by breaking problems into subproblems.*
+
+*   **Day 1**
+    *   Problem 1: `Climbing Stairs` (Time: 25 min attempt, 15 min review)
+    *   Problem 2: `Min Cost Climbing Stairs` (Time: 25 min attempt, 15 min review)
+*   **Day 2**
+    *   Problem 1: `House Robber` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `House Robber II` (Time: 30 min attempt, 20 min review)
+*   **Day 3**
+    *   Problem 1: `Coin Change` (Time: 35 min attempt, 25 min review)
+*   **Day 4**
+    *   Problem 1: `Longest Increasing Subsequence` (Time: 35 min attempt, 25 min review)
+*   **Day 5**
+    *   Problem 1: `Word Break` (Time: 35 min attempt, 25 min review)
+    *   Problem 2: `Unique Paths` (Time: 30 min attempt, 20 min review)
+*   **Day 6: Review Day**
+    *   Re-solve `House Robber` and `Coin Change` from memory.
+    *   Focus on how you defined the state for your DP array/memoization.
+*   **Day 7: Review & Catch-up Day**
+    *   Review the logic for `Longest Increasing Subsequence`.
+    *   Finish any problems you didn't get to.
+
+---
+
+### **Week 7: Backtracking & Advanced Concepts**
+
+*Goal: Master recursive backtracking and review key patterns from previous weeks.*
+
+*   **Day 1**
+    *   Problem 1: `Subsets` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `Combination Sum` (Time: 30 min attempt, 20 min review)
+*   **Day 2**
+    *   Problem 1: `Permutations` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `Word Search` (Time: 35 min attempt, 25 min review)
+*   **Day 3**
+    *   Problem 1: `Merge Intervals` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `Maximum Subarray` (Time: 25 min attempt, 15 min review)
+*   **Day 4**
+    *   Problem 1: `Search in Rotated Sorted Array` (Time: 30 min attempt, 20 min review)
+    *   Problem 2: `Find Minimum in Rotated Sorted Array` (Time: 25 min attempt, 15 min review)
+*   **Day 5**
+    *   Problem 1: `N-Queens` (Time: 40 min attempt, 25 min review)
+*   **Day 6: Review Day**
+    *   Review the backtracking template. How is it similar for `Subsets`, `Combinations`, and `Permutations`?
+    *   Re-solve `Search in Rotated Sorted Array`.
+*   **Day 7: Review & Catch-up Day**
+    *   Review any 3 problems from the entire syllabus that you found most difficult.
+
+---
+
+### **Week 8: Mock Interviews & Final Polish**
+
+*Goal: Simulate the interview environment and handle pressure.*
+
+*   **Day 1:** Do a full mock interview with a peer or using a platform.
+    *   Solo Practice: `Trapping Rain Water` (Time: 40 min attempt, 25 min review)
+*   **Day 2:** Do a full mock interview.
+    *   Solo Practice: `Median of Two Sorted Arrays` (Time: 40 min attempt, 25 min review)
+*   **Day 3:** Do a full mock interview.
+    *   Solo Practice: `Serialize and Deserialize Binary Tree` (Time: 40 min attempt, 25 min review)
+*   **Day 4: Targeted Practice.** Look up frequently asked questions for your target companies and practice 2-3 of them.
+*   **Day 5: Weakness Drill.** Go back to the topic you felt least confident in (e.g., Graphs, DP) and re-solve 2-3 problems from that week.
+*   **Day 6: Light Review & Behavioral Prep.** Quickly read through your notes on key patterns. Prepare your answers for "Tell me about yourself," "Tell me about a project," etc.
+*   **Day 7: Rest.** Do not cram. Relax, get good sleep, and trust the process. You've prepared well. Good luck!
